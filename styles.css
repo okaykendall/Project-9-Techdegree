@@ -1,0 +1,79 @@
+
+/* Main styles */
+
+.navbar {
+    background-color: palegoldenrod;
+    color: #6A35FC
+}
+
+.header {
+    background-color: #68FCC9;
+    padding-bottom: 1em;
+}
+
+.header-text {
+    padding: 10px;
+    color: #FC5B35
+}
+
+.header-text a {
+    color: #FC5B35;
+    text-decoration: none;    
+}
+
+.header-text a,
+.highlighter{
+    background-image: linear-gradient(to right, white 50%, white 60%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    background-repeat: no-repeat;
+    transition: background .5s;
+}
+
+.header-text a:hover,
+.highlighter:hover {
+    background-size: 100% 100%;
+    background-position: -99.99% 0;
+    box-shadow: inset 0 -.5em 0 0 white; 
+}
+
+p .highlighter {
+    text-align: right;
+}
+
+.content-shell {
+    background-image: url(images/minnie-walrus.png);
+    background-repeat: no-repeat;
+}
+
+
+
+@media (min-width: 768px) {
+
+.jumbotron {
+    background-image: url(images/spiraljetty.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: relative;
+}
+
+.header-text {
+    position: absolute;
+    right: 170px;
+    top: 100px;
+    z-index: 1150;
+    color: #FC5B35;
+    letter-spacing: 1.5px;
+    /* line-height: 2em; */
+}
+
+.spiralJetty {
+    position: relative;
+    box-shadow: 5px 10px #6A35FC;
+}
+
+
+}
