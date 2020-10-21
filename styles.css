@@ -1,8 +1,11 @@
 
 /* Main styles */
 
+/* navbar settines */
+
 .navbar {
     background-color: palegoldenrod;
+    z-index: 2000;
 }
 
 .navlink:hover {
@@ -13,9 +16,11 @@
     color: lightgrey;
 }
 
+/* -----header stuff----- */
+
 .header {
     background-color: #68FCC9;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 .header-text {
@@ -33,8 +38,11 @@ h1 a {
     font-size: 50px;
 }
 
+/* ----- header/list item highlight animation ----- */
+
 .header-text a,
-.highlighter{
+.highlighter
+ {
     background-image: linear-gradient(to right, white 50%, white 60%);
     background-position: -0% 0;
     background-size: 100% 88%;
@@ -43,7 +51,8 @@ h1 a {
 }
 
 .header-text a:hover,
-.highlighter:hover {
+.highlighter:hover
+    {
     background-size: 70% 95%;
     background-position: -90% 0;
 }
@@ -52,10 +61,86 @@ p .highlighter {
     text-align: right;
 }
 
+/* -----portfolio section */
+
 .content-shell {
     background: #FC5B35;
+    padding-bottom: 3em;
 }
 
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-item {
+        background-color: transparent;
+        border: none;
+        background-position: -0% 0; 
+        background-size: 99% 80%;
+        background-repeat: no-repeat;
+        transition: background .5s;
+        color: #fcee4e;
+}
+
+.list-group-item:nth-child(even) {
+    text-align: right;
+    background-image: linear-gradient(to right, #6135fc 80%, #6135fc 20%);
+    /* background-position: 80% 0%; */
+}
+
+.list-group-item:nth-child(odd) {
+    background-image: linear-gradient(to left, #6135fc 50%, #6135fc 60%);
+}
+
+.list-group-item:focus {
+    background-size: 70% 80%;
+    background-position: -90% 0;
+}
+
+.list-group-item.active {
+    background-color: transparent;
+}
+
+.list-group-item-action:hover {
+    background-color: transparent;
+    font-style: italic; 
+    color: yellow;
+}
+
+.list-group a:nth-child(even):focus {
+    font-weight: 600;
+    background-color: palegoldenrod;
+    color: #FC5B35;
+}
+
+/* about sectionnnn ------- */
+
+.about-shell {
+    background: paleturquoise;
+}
+
+.about-shell h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.myself {
+    padding: 0;
+    box-shadow: 8px 10px palegoldenrod;
+}
+
+.bio {
+    font-size: 25px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+/* content section ------- */
+
+.content-section {
+    background: #6135fc;
+}
 
 
 @media (min-width: 768px) {
@@ -75,10 +160,16 @@ p .highlighter {
     right: 50px;
     top: 80px;
     z-index: 1150;
+    margin-left: 5px;
 }
 
 h1 a {
     font-size: 45px;
+}
+
+.bio {
+    padding: 5px;
+    font-size: 20px;
 }
 
 /* .spiralJetty {
@@ -93,14 +184,14 @@ h1 a {
 
 .header-text {
     position: absolute;
-    right: 170px;
-    top: 100px;
+    right: 150px;
+    top: 130px;
     z-index: 1150;
     } 
 
 .spiralJetty {
     position: relative;
-    box-shadow: 5px 10px #6A35FC;
+    box-shadow: 8px 10px #6A35FC;
     }
 
 }
