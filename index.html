@@ -18,7 +18,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link about-link" href="#" title="moi!" text-decoration-none>about<span class="sr-only">(current)</span></a>
+            <a class="nav-link about-link" href="#about" title="moi!" text-decoration-none>about<span class="sr-only">(current)</span></a>
             <a class="nav-link port-link" href="#portfolio" title="check it out!" text-decoration-none>portfolio</a>
             <a class="nav-link contact-link" href="#" text-decoration-none>contact</a>
           </div>
@@ -64,19 +64,46 @@
             </div>
             <div class="col-6">
               <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade" id="list-kyle" role="tabpanel" aria-labelledby="list-home-list">
+                <div class="tab-pane fade" id="list-kyle" role="tabpanel" aria-labelledby="list-kyle-list">
                     <p class="lean text-center">this simple page was designed for a close friend in order to showcase his current series
-                        of embroidery works that are on display in Tokyo.<br>
-                        <a href="#" target="_blank">check them out here</a>
+                        of embroidery works that are on display in Tokyo. i animated custom made SVG images that were traced using inkscape from an image of his needlework.<br>
+                        <a href="kyle-site/index.html" target="_blank">&#9758; check it out here</a>
                     </p>
                 </div>
-                <div class="tab-pane fade" id="list-guess" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-                <div class="tab-pane fade" id="list-fotos" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-                <div class="tab-pane fade" id="list-space" role="tabpanel" aria-labelledby="list-settings-list">...</div>
-                <div class="tab-pane fade" id="list-directory" role="tabpanel" aria-labelledby="list-home-list">...</div>
-                <div class="tab-pane fade" id="list-dash" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-                <div class="tab-pane fade" id="list-listicles" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-                <div class="tab-pane fade" id="list-nat" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                <div class="tab-pane fade" id="list-guess" role="tabpanel" aria-labelledby="list-guess-list">
+                  <p class="lean text-center">as a part of the techdegree i built javascript for this "guess the phrase" game. it includes an array of 5 different phrases
+                    the user may be required to guess for.
+                    <br>
+                    <a href="Project-6-Techdegree/index.html" target="_blank">&#9758; check it out here</a>
+                </p>
+                </div>
+                <div class="tab-pane fade" id="list-fotos" role="tabpanel" aria-labelledby="list-fotos-list">
+                  <p class="lean text-center">this project was an excercise in jquery plugins and pure javascript. using a lightbox plugin
+                    and javascript to create a filtering search bar, i built this photo gallery.<br>
+                    <a href="Project-5-Techdegree/index.html" target="_blank">&#9758; check it out here</a>
+                </p>
+                </div>
+                <div class="tab-pane fade" id="list-space" role="tabpanel" aria-labelledby="list-space-list">
+                  <p class="lean text-center">by using fetch 2 different APIs this webpage tells a visitor who exactly is in space at any given moment. 
+                    javascript was used to create the dynamic layout and make the fetch requests.<br>
+                    <a href="#" target="_blank">&#9758; check it out here</a>
+                </p>
+                </div>
+                <div class="tab-pane fade" id="list-directory" role="tabpanel" aria-labelledby="list-directory-list">
+                  <p class="lean text-center">by using the fetch API and the randomuser.me random people generator, this webpage displays a page
+                    of randomized employees in a fake company.<br>
+                    <a href="#" target="_blank">&#9758; check it out here</a>
+                </p>
+                </div>
+                <div class="tab-pane fade" id="list-dash" role="tabpanel" aria-labelledby="list-dash-list">
+                  <p class="lean text-center">this is a responsive prototype of an employee dashboard. dynamic graphs were created
+                    with the chart library chartjs and javascript was added for an alert banner. the layout was created without any framework programming animatedw
+                    was done with css flexgrid.<br>
+                    <a href="#" target="_blank">&#9758; check it out here</a>
+                </p>
+                </div>
+                <div class="tab-pane fade" id="list-listicles" role="tabpanel" aria-labelledby="list-listicles-list">...</div>
+                <div class="tab-pane fade" id="list-nat" role="tabpanel" aria-labelledby="list-nat-list">...</div>
               </div>
             </div>
           </div>
@@ -86,8 +113,8 @@
     <!-- portfolio cards end -->
 
         <!-- about section start -->
-<div class="container-fluid about-shell">
-            <h1 class="text-right mx-4">a brief summation</h1>
+<div class="container-fluid about-shell" id="about">
+            <h1 class="text-right mx-4">a brief history</h1>
         <div class="container pb-5 d-md-flex flex-md-row justify-content-md-around">
                 <img class="img-fluid col-md-5 myself" src="images/myself.jpeg" alt="myself">
                 <p class="lean col-md-5 bio">my name is kendall! and i care deeply about narrative, communication, and transparency. i'm from virginia but have been based in Barcelona since completing my MA here in 

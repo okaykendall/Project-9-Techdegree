@@ -81,6 +81,7 @@ p .highlighter {
         background-repeat: no-repeat;
         transition: background .5s;
         color: #fcee4e;
+        padding: 8px;
 }
 
 .list-group-item:nth-child(even) {
@@ -96,10 +97,12 @@ p .highlighter {
 .list-group-item:focus {
     background-size: 70% 80%;
     background-position: -90% 0;
+    font-weight: 500;
 }
 
 .list-group-item.active {
     background-color: transparent;
+    color: yellow;
 }
 
 .list-group-item-action:hover {
@@ -109,9 +112,12 @@ p .highlighter {
 }
 
 .list-group a:nth-child(even):focus {
-    font-weight: 600;
     background-color: palegoldenrod;
     color: #FC5B35;
+}
+
+.tab-pane p {
+    line-height: 2;
 }
 
 /* about sectionnnn ------- */
@@ -133,6 +139,7 @@ p .highlighter {
 .bio {
     font-size: 25px;
     padding-top: 15px;
+    line-height: 2;
     text-align: center;
 }
 

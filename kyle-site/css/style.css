@@ -1,0 +1,227 @@
+
+/* //general styles for everythinggggg */
+
+
+body {
+    background-image: repeating-radial-gradient(closest-corner at 60px 60px, lightblue 5%, cornsilk 90%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+h2,
+h3,
+p,
+.main-header{
+    font-family: 'Pridi', serif;
+    font-weight: lighter;
+}
+
+h4, .noto {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 100;
+}
+
+.main-header {
+    background-color: cornsilk;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(68, 68, 68, 0.6);
+    font-size: 1rem;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+#hand-plant {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    width: 60%;
+}
+
+svg {
+    display: none;
+}
+
+
+/* bio card stylessssss++++++ */
+
+.bio-contain {
+    padding: 2em;
+    margin-bottom: 3em;
+    background-color: cornsilk;
+    z-index: 9;
+}
+
+#bio p {
+    padding: 2em;
+    background-color: lightblue;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+.bio-plant {
+    display: none;
+}
+
+.contact {
+    background-color: cornsilk;
+    padding-top: 2em;
+}
+
+/* media querieessssss ---------- */
+
+@media (min-width: 768px) { 
+
+.main-header {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    width: 40%;
+    font-size: smaller;
+    font-weight: 600;
+    align-self: center;
+    margin-left: 5px;
+    margin-top: 25px;
+    border-bottom: 10px solid #FF4D3E;
+}   
+
+.main-header h3 {
+    font-weight: 100;
+}
+
+svg {
+    display: flex;
+    align-self: flex-end;
+    flex-grow: 1;
+    height: 70%;
+    width: 70%;
+    background-color: cornsilk;
+    z-index: 2000;
+}
+
+.mirrorImg {
+    display: flex;
+}
+
+.topshell {
+    border-right: 20px solid #FF4D3E;
+    border-left: 20px solid #FF4D3E;
+    margin-left: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@keyframes offset {
+    /* 25% {
+        stroke-dashoffset: 3;
+    } */
+
+    50% {
+        stroke-dashoffset: 2;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fillit {
+    100% {
+        fill: black 
+    }
+}
+
+.firstPath,
+.secondPath {
+    stroke: black;
+    stroke-width: 4;
+    stroke-dasharray: 810;
+    stroke-dashoffset: 810;
+    transition: stroke .5s;
+    animation: offset 5s linear forwards, fillit .8s 2s forwards;
+}
+
+.firstPath:hover,
+.secondPath:hover {
+    stroke: red;
+}
+
+/* #bio {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+} */
+
+.bio-contain {
+    border-top: 20px solid #FF4D3E;
+    border-bottom: 20px solid #FF4D3E;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+#bio{
+    display: flex;
+    align-self: center;
+}
+/* 
+.bio-plant {
+    display: flex;
+    justify-content: flex-end;
+    width: 35%;
+    margin-right: 5px;
+} */
+
+}
+
+@media (min-width: 1024px) {
+
+    .main-header {
+        padding: 15px;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .mainSVG {
+        width: 90%;
+        height: 75%;
+        border-bottom: 20px solid #FF4D3E;
+    }
+
+    .mirrorImg svg {
+        display: flex;
+        justify-content: flex-end;
+        width: 70%;
+        height: 60%;
+    }
+
+    #bio {
+        font-size: 20px;
+        box-sizing: padding-box;
+    }
+
+    .bio-plant {
+        width: 30%;
+        border-left: 20px solid #FF4D3E;
+    }
+
+    .contact {
+        border-top: 20px solid #FF4D3E;
+    }
+
+    .contact .noto {
+        border-right: 20px solid #FF4D3E;
+    }
+
+
+
+
+}
