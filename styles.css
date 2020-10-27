@@ -1,6 +1,9 @@
 
 /* Main styles */
 
+a:hover {
+    text-decoration: none;
+}
 /* navbar settines */
 
 .navbar {
@@ -63,6 +66,7 @@ p .highlighter {
 
 /* -----portfolio section */
 
+
 .content-shell {
     background: #FC5B35;
     padding-bottom: 3em;
@@ -117,7 +121,18 @@ p .highlighter {
 }
 
 .tab-pane p {
-    line-height: 2;
+    line-height: 1.8;
+    background-color: cornsilk;
+    padding: 10px;
+}
+
+.tab-pane a {
+    color: #68FCC9;
+}
+
+.tab-pane a:hover {
+    color: #FC5B35;
+    font-style: italic;
 }
 
 /* about sectionnnn ------- */
@@ -129,6 +144,7 @@ p .highlighter {
 .about-shell h1 {
     padding-top: 1em;
     padding-bottom: 1em;
+    font-weight: 300;
 }
 
 .myself {
@@ -144,9 +160,27 @@ p .highlighter {
 }
 
 /* content section ------- */
+#contact h3 {
+    color: #FC5B35;
+}
 
 .content-section {
     background: #6135fc;
+    padding-bottom: 8px;
+}
+
+#contact a {
+    padding: 8px;
+    color: palegoldenrod;
+}
+
+#contact a:hover {
+    color: #fc5b35;
+    font-style: italic;
+}
+
+.footer {
+    color: palegoldenrod;
 }
 
 

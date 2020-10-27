@@ -108,8 +108,8 @@ svg {
 }
 
 .topshell {
-    border-right: 10px solid #FF4D3E;
-    border-left: 10px solid #FF4D3E;
+    /* border-right: 10px solid #FF4D3E;
+    border-left: 10px solid #FF4D3E; */
     margin-left: 0 auto;
     display: flex;
     flex-direction: row;
@@ -159,6 +159,11 @@ svg {
 
 .lowersvg {
     flex-grow: 1;
+}
+
+.lowersvg .firstPath,
+.lowersvg .secondPath {
+    stroke-width: 3;
 }
 
 /* #bio {
