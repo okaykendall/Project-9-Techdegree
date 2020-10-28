@@ -1,9 +1,17 @@
 
 const makeStory = document.getElementById('create');
 
+
+//     if (checking.validity.typeMismatch) {
+//         checking.setCustomValidity('Make sure to fill it all out!');
+//     } else {
+//         checking.setCustomValidity('');
+//     }
+// });
+
 const storyFunction = function () {
     const storySpan = document.getElementById('story');
-    const input = document.querySelector('input').value;
+    const input = document.querySelector('input');
     // const libForm = document.getElementById('inputForm');
 
 //mad lib variables    
@@ -45,21 +53,6 @@ const storyFunction = function () {
     
 };
 
-
-
-// function storyFunction () {
-//     if (input === '') {
-//     alert('Fill out all fields first for a good story!');
-//     return false; }
-// };
-
-function checkInputs () {
-const input = document.getElementsByClassName('genInput').value;  
-if ( input === '') {
-    alert('Fill out all the fields first!');
-    return false;
-    } 
-};
 
 makeStory.addEventListener('click', storyFunction);
 
