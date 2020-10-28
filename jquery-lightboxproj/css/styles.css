@@ -1,0 +1,46 @@
+
+*{
+    box-sizing: border-box;
+}
+
+input{
+    margin-top: 2em;
+    display: block;
+    position: relative;
+    left: 30%;
+    width: 500px;
+    border-radius: 25px;
+    height: 40px;
+    border: 1px solid grey;
+}
+
+#search-put {
+    padding-left: 1em;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+.container {
+    margin: 2em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.main-con {
+    margin: .5em;
+    padding: 1em;
+}
+
+span .lb-caption {
+    text-align: center;
+}
