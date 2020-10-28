@@ -128,11 +128,10 @@ ol {
 
 .list-scrip {
     font-style: italic;
+    font-size: 18px;
 }
 
-.textOfHead {
-    width: 30%;
-}
+
 
 .first-letter {
     color: olivedrab;
@@ -171,6 +170,10 @@ p {
 
     .modalimg {
         width: 20%;
-    }    
+    }  
+    
+    .textOfHead {
+        width: 30%;
+    }
 
 }
