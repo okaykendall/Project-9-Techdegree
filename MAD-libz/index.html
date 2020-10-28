@@ -17,37 +17,39 @@
 </h1>    
 
 <div class="container-fluid text-center" id="inputForm">
+    <form action="#story" method="post" onsubmit="return checkInputs()">
         <ul class="list-unstyled">
             <li>Apex predator</li>
-                <input type="text" id="apex">
+                <input type="text" class="genInput" id="apex" required>
             <li>First name</li>
-                <input type="text" id="name">
+                <input type="text" class="genInput" id="name" required>
             <li>Recreational activity with -ing</li>
-                <input type="text" id="activity">
+                <input type="text" class="genInput" id="activity" required>
             <li>Type of monster</li>
-                <input type="text" id="monster">
+                <input type="text" class="genInput" id="monster" required>
             <li>Body part</li>
-                <input type="text" id="body-part">
+                <input type="text" class="genInput" id="body-part" required>
             <li>Body part (singular) that you have two of</li>
-                <input type="text" id="body-pair">
+                <input type="text" class="genInput" id="body-pair" required>
             <li>Type of car</li>
-                <input type="text" id="car">
+                <input type="text" class="genInput" id="car" required>
             <li>Plural food</li>
-                <input type="text" id="food">
+                <input type="text" class="genInput" id="food" required>
             <li>Adverb</li>
-                <input type="text" id="adverb">    
+                <input type="text" class="genInput" id="adverb" required>    
             <li>American city</li>
-                <input type="text" id="city">
+                <input type="text" class="genInput" id="city" required>
             <li>Type of mammal</li>
-                <input type="text" id="mammal">
+                <input type="text" class="genInput" id="mammal" required>
             <li>Inanimate object</li>
-                <input type="text" id="object">
+                <input type="text" class="genInput" id="object" required>
             <li>Number below 100</li>
-                <input type="number" id="number">
+                <input type="number" class="genInput" id="number" required>
             <li>Indoor activity with -ing</li>
-                <input type="text" id="indoor-act">
+                <input type="text" class="genInput" id="indoor-act" required>
         </ul> 
-    <button class="text-center storyButton" id="create">storify!</button>
+    <button type="submit" class="text-center storyButton" id="create">storify!</button>
+</form>
 </div>
 
 <span class="overlay hidden text-center container-fluid d-flex" id="story"></span>

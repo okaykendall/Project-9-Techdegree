@@ -1,7 +1,7 @@
 
 const makeStory = document.getElementById('create');
 
-const storyFunction = function() {
+const storyFunction = function () {
     const storySpan = document.getElementById('story');
     const input = document.querySelector('input').value;
     // const libForm = document.getElementById('inputForm');
@@ -42,14 +42,28 @@ const storyFunction = function() {
     resetBtn.addEventListener('click', () => {
         window.location.reload();
     });
+    
 };
+
+
 
 // function storyFunction () {
 //     if (input === '') {
 //     alert('Fill out all fields first for a good story!');
 //     return false; }
 // };
+
+function checkInputs () {
+const input = document.getElementsByClassName('genInput').value;  
+if ( input === '') {
+    alert('Fill out all the fields first!');
+    return false;
+    } 
+};
+
 makeStory.addEventListener('click', storyFunction);
+
+
 
 
 
