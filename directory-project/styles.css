@@ -46,6 +46,7 @@ padding-bottom: 5px;
     border: 2px solid darkgray;
     border-radius: 5px;
     background: ghostwhite;
+    flex-basis: 25%;
 }
 
 .avatar {
