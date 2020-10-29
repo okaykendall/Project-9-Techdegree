@@ -77,9 +77,16 @@ p .highlighter {
 }
 
 .content-shell h1 {
+    padding: 10px;
+    align-self: flex-start;
     letter-spacing: 1.5px;
     font-weight: 300;
     font-size: 45px;
+    background-image: linear-gradient(to right, white 50%, white 60%);
+    background-position: -10% 6%;
+    background-size: 95% 87%;
+    background-repeat: no-repeat;
+    color: #6A35FC;
 }
 
 .content-shell {
@@ -178,10 +185,15 @@ svg {
 }
 
 .about-shell h1 {
-    padding-top: 1em;
-    padding-bottom: 1em;
+padding: 1em;
     font-weight: 300;
+    text-align: right;
+    align-self: flex-end;
     letter-spacing: 1px;
+    background-image: linear-gradient(to right, white 50%, white 60%);
+    background-position: 95% 4%;
+    background-size: 20% 87%;
+    background-repeat: no-repeat;
 }
 
 .myself {
