@@ -18,9 +18,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link port-link" href="#portfolio" title="check it out!" text-decoration-none>portfolio</a>
-            <a class="nav-link about-link" href="#about" title="moi!" text-decoration-none>about<span class="sr-only">(current)</span></a>
-            <a class="nav-link contact-link" href="#contact" text-decoration-none>contact</a>
+            <a class="nav-link port-link text-decoration-none" href="#portfolio" title="check it out!">portfolio</a>
+            <a class="nav-link about-link text-decoration-none" href="#about" title="moi!">about<span class="sr-only">(current)</span></a>
+            <a class="nav-link contact-link text-decoration-none" href="#contact">contact</a>
           </div>
         </div>
     </div>
@@ -32,102 +32,310 @@
         <div class="container-fluid clearfix mx-auto pl-0 header">
           <img class="img-fluid spiralJetty d-none d-sm-block" src="images/spiraljetty.jpg" alt="spiral jetty">
             <div class="header-text mr-3 text-break"> 
-                <h1 class="display-4 text-left mb-4">
-                    <a href="#" class="highlighter text-decoration-none">kendall bendheim</a>
+                <h1 class="display-4 text-left mb-4 highlighter">
+                   kendall bendheim
                 </h1>
                 <h3 class="text-center highlighter font-weight-normal mb-4">retired Magician, blossoming web designer</h3>
                 <p class="lead highlighter mt-4 ml-4 text-left">based in Barcelona, bred in sweet Virginia</p>
             </div>
         </div>
 
-        <!-- Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
-    <!-- header section end -->
-
 
     <!-- portfolio cards -->
-<div class="content-shell">
-    <h1 id="portfolio" class="display-4 text-center mb-5 pt-5 clearfix">projects</h1>
-    <div class="portfol-container container clearfix">
-
-        <div class="row">
-            <div class="col-6">
-              <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action" id="list-kyle-list" data-toggle="list" href="#list-kyle" role="tab" aria-controls="kyle">before consequence</a>
-                <a class="list-group-item list-group-item-action" id="list-guess-list" data-toggle="list" href="#list-guess" role="tab" aria-controls="guess">guess the phrase</a>
-                <a class="list-group-item list-group-item-action" id="list-fotos-list" data-toggle="list" href="#list-fotos" role="tab" aria-controls="fotos">searchable photo gallery</a>
-                <a class="list-group-item list-group-item-action" id="list-space-list" data-toggle="list" href="#list-space" role="tab" aria-controls="space">who's in space?</a>
-                <a class="list-group-item list-group-item-action" id="list-directory-list" data-toggle="list" href="#list-directory" role="tab" aria-controls="directory">employee directory</a>
-                <a class="list-group-item list-group-item-action" id="list-dash-list" data-toggle="list" href="#list-dash" role="tab" aria-controls="dash">web app dashboard</a>
-                <a class="list-group-item list-group-item-action" id="list-listicles-list" data-toggle="list" href="#list-listicles" role="tab" aria-controls="listicles">listicles</a>
-                <a class="list-group-item list-group-item-action" id="list-madlib-list" data-toggle="list" href="#list-madlibs" role="tab" aria-controls="madlib">mad libs</a>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade" id="list-kyle" role="tabpanel" aria-labelledby="list-kyle-list">
-                    <p class="lean text-center">this responsive and simple page was designed for a close friend in order to showcase his current series
-                        of embroidery works. I animated custom made SVG images that were traced using inkscape from an image of his needlework for the page.<br>
-                        <a href="kyle-site/index.html" target="_blank">&#9758; check it out here</a>
-                    </p>
+<div class="content-shell container-fluid">
+    <h1 id="portfolio" class="text-center mb-5 pt-5">projects</h1>
+    <div class="container main-project-div d-md-flex">
+      <!-- before consequence -->
+      <div class="row justify-content-md-between">
+        <div class="kyle-site-div project-div">
+          <a class="btn" data-toggle="modal" data-target="#before-con">
+            <svg width="224" height="217" xmlns="http://www.w3.org/2000/svg">
+              <g>
+              <rect fill="none" height="602" width="802" y="-1" x="-1"/>
+              </g>
+              <g>
+              <path stroke="#000" class="port-img" d="m12.82321,178.28308c12.36709,-0.08376 24.73418,-0.16753 37.10127,-0.25128c0.08143,-13.2484 0.16284,-26.49681 0.24426,-39.7452c12.30801,0 24.61602,0 36.92404,0c0,-13.32969 0,-26.65937 0,-39.98905c12.6232,0 25.24638,0 37.86958,0c0,-13.00457 0,-26.00913 0,-39.0137c12.46734,0 24.93469,0 37.40205,0c0,-13.00456 0,-26.00913 0,-39.0137c18.54519,0 37.09037,0 55.63556,0c0,6.50228 0,13.00457 0,19.50685c-12.31153,0 -24.62301,0 -36.93455,0c0,13.16712 0,26.33425 0,39.50138c-12.46734,0 -24.93468,0 -37.40205,0c0,13.16713 0,26.33425 0,39.50138c-12.46736,0 -24.93469,0 -37.40205,0c0,13.16712 0,26.33425 0,39.50136c-12.6232,0 -25.24639,0 -37.86958,0c0,13.32969 0,26.65937 0,39.98904c-18.70103,0 -37.40205,0 -56.10308,0c0.8337,-6.46164 -1.42126,-13.74785 0.53454,-19.98706l0,-0.00001z" 
+              fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="transparent"/>
+              </g>
+            </svg>
+          </a>
+          <div class="modal fade" id="before-con" tabindex="-1" aria-labelledby="before-con" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="before-con-title">before consequence</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-                <div class="tab-pane fade" id="list-guess" role="tabpanel" aria-labelledby="list-guess-list">
-                  <p class="lean text-center">as a part of the techdegree I built javascript for this "guess the phrase" game. it includes an array of 5 different phrases
-                    the user may be required to guess for as well as functions to randomize the phrases and to keep score and end the game when lost or won.
-                    <br>
-                    <a href="guess-le-phrase/index.html" target="_blank">&#9758; check it out here</a>
-                </p>
-                </div>
-                <div class="tab-pane fade" id="list-fotos" role="tabpanel" aria-labelledby="list-fotos-list">
-                  <p class="lean text-center">this project was an excercise in jquery plugins and pure javascript. by using a lightbox plugin
-                    and javascript to create a filtering search bar, I built this photo gallery.<br>
-                    <a href="jquery-lightboxproj/index.html" target="_blank">&#9758; check it out here</a>
-                </p>
-                </div>
-                <div class="tab-pane fade" id="list-space" role="tabpanel" aria-labelledby="list-space-list">
-                  <p class="lean text-center">by using fetch and 2 other APIs, this webpage tells a visitor who exactly is in space at any given moment,
-                    along with a brief summary of the astronaut. 
-                    javascript was used to create the dynamic layout and make the fetch requests.<br>
-                    <a href="whoisinspace/index.html" target="_blank">&#9758; check it out here</a>
-                </p>
-                </div>
-                <div class="tab-pane fade" id="list-directory" role="tabpanel" aria-labelledby="list-directory-list">
-                  <p class="lean text-center">by using the fetch API and the randomuser.me random people generator, this webpage displays a page
-                    of randomized employees in a fake company and includes a filtering search function.<br>
-                    <a href="directory-project/index.html" target="_blank">&#9758; check it out here</a>
-                </p>
-                </div>
-                <div class="tab-pane fade" id="list-dash" role="tabpanel" aria-labelledby="list-dash-list">
-                  <p class="lean text-center">this is a responsive prototype of an employee dashboard. dynamic graphs were created
-                    with the chart library chartjs and javascript was added for an alert banner. the layout was created without any frameworks and
-                    was done with css flexgrid.<br>
-                    <a href="dashboard-project/index.html" target="_blank">&#9758; check it out here</a>
-                </p>
-                </div>
-                <div class="tab-pane fade" id="list-listicles" role="tabpanel" aria-labelledby="list-listicles-list">
-                  <p class="lean text-center">one of my favorite hobbies is writing lists, and recently I've begun writing satirical lists a lá Dave Eggers' online
-                    magazine "McSweeney's". I've animated this page with css and had it show modal windows with these lists and intend to update it semi-regularly and improve the design.<br>
-                    <a href="listiclepage/index.html" target="_blank">&#9758; check it out here</a>
-                </p>
-                </div>
-                <div class="tab-pane fade" id="list-madlibs" role="tabpanel" aria-labelledby="list-madlib-list">
-                  <p class="lean text-center">this is a madlib I wrote and programmed with simple javascript. I intend to improve upon it by substituting the various input variables
-                    with a loop, adding form validation, and writing more madlibs with an option to choose one by theme or randomly on a landing page.<br>
-                    <a href="MAD-libz/index.html" target="_blank">&#9758; check it out here</a>
-                </p>
+                <div class="modal-body d-flex flex-column">
+                  <p class="lean">this responsive and simple page was designed for a close friend in order to showcase his current series
+                    of embroidery works. I animated custom made SVG images that were traced using inkscape from an image of his needlework for the page.<br>
+                  </p>
+                    <a href="kyle-site/index.html" target="_blank">&#9758; check it out here</a>
+                
                 </div>
               </div>
             </div>
           </div>
+      </div>
 
+      <!-- dashboard div -->
+      <div class="dashboard-div project-div">
+        <a class="btn" data-toggle="modal" data-target="#dashboard-modal">
+          <svg width="224" height="217" xmlns="http://www.w3.org/2000/svg">
+            <g>
+             <rect fill="none" height="602" width="802" y="-1" x="-1"/>
+            </g>
+            <g>
+             <path stroke="#000" class="port-img" id="svg_2" d="m159.21936,286.66082l-18.76315,-0.49129c-4.734,-0.12383 -10.97188,-0.06423 -13.95479,0.13302l-7.39562,0.49037l35.89471,0.93919l7.40145,-0.49015c2.97159,-0.19749 1.55336,-0.45759 -3.1826,-0.58115l0,0zm-103.98832,4.36872l35.89666,0.93918l58.50561,-3.87996l-35.91375,-0.93942l-58.48853,3.8802l0.00001,0zm-5.48321,1.19326l-0.79283,0.88215l18.73437,-0.41281l17.40955,-0.38294l-34.63066,-0.90663l-0.72043,0.82022l0,0l-0.00001,0z" 
+             fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="transparent"/>
+             <path stroke="#000" class="port-img" id="svg_3" d="m190.30203,21.60619c-16.14052,-10.2074 -38.61088,-6.93202 -50.18115,7.33371l-90.74578,111.92853c-8.26042,10.17998 -5.61086,24.36227 5.92818,31.66112c11.539,7.28523 27.57743,4.94438 35.83784,-5.24902l64.07367,-79.02117l-8.35243,-5.29074l-64.06391,79.02796l0,0c-4.96209,6.10105 -14.59026,7.51365 -21.49456,3.15111c-6.91385,-4.36981 -8.49738,-12.88044 -3.54511,-18.99538l0,0l90.73403,-111.92173l0.01169,-0.0071l-0.01952,-0.00679c8.25065,-10.15895 24.33998,-12.50649 35.84759,-5.22837c11.50766,7.28501 14.16913,21.5022 5.93014,31.66792l0,-0.00676l-99.46078,122.67615l0.00976,0.01393c-11.54861,14.23787 -34.07009,17.52722 -50.19091,7.33369c-16.12066,-10.2145 -19.83052,-30.08928 -8.29166,-44.34109l72.28311,-89.15224l-8.35436,-5.28361l-72.281,89.15225c-14.86864,18.33757 -10.09078,43.8421 10.67472,56.97196c20.76539,13.14372 49.63625,8.9195 64.5049,-9.41097l99.45852,-122.68334c11.53915,-14.25858 7.83909,-34.09875 -8.31299,-44.32002l0,0.00001z" 
+             fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="transparent"/>
+            </g>
+           </svg>
+        </a>
+        <div class="modal fade" id="dashboard-modal" tabindex="-1" aria-labelledby="dashboard-modal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="dashboard-title">web app dashboard</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body  d-flex flex-column">
+                <p class="lean">this is a responsive prototype of an employee dashboard. dynamic graphs were created
+                  with the chart library chartjs and javascript was added for an alert banner. the layout was created without any frameworks and
+                  was done with css flexgrid.<br>
+                </p>
+                <a href="dashboard-project/index.html" target="_blank">&#9758; check it out here</a>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-</div>   
-    <!-- portfolio cards end -->
+    <!-- dashboard div end -->
+
+
+      <!-- madlibz div -->
+      <div class="madlibs-div project-div">
+        <a class="btn" data-toggle="modal" data-target="#madlibs-modal">
+          <svg width="224" height="217" xmlns="http://www.w3.org/2000/svg">
+            <g>
+             <rect fill="transparent" height="602" width="802" y="-1" x="-1"/>
+            </g>
+            <g>
+             <path stroke="#000" class="port-img" d="m101.4624,209.79747c-14.10373,-3.24313 -22.27441,-16.57634 -21.31063,-28.67178c-0.36106,-15.79892 1.32056,-32.42341 -7.39512,-46.95033c-4.96783,-10.84638 -13.43058,-20.42278 -16.96221,-31.72589c-4.39475,-17.53601 1.0337,-37.41129 17.38991,-49.18389c18.44595,-13.70076 47.90274,-15.48649 68.20807,-3.84168c14.3215,8.55102 24.65479,22.6546 24.2709,38.04493c1.68046,11.49998 -3.55559,22.31671 -9.71523,32.20282c-4.41313,7.96001 -9.56702,15.74927 -13.57262,23.79803c-1.05597,16.50295 -0.45035,33.15726 -3.31457,49.51826c-4.77126,12.6779 -22.7523,21.29761 -37.5985,16.80953l0,0.00001zm37.25004,-29.50754c-8.37017,-3.91088 -20.39804,-1.36821 -30.12714,-2.21017c-7.94738,1.37789 -22.06903,-2.82617 -26.29402,3.48009c9.66229,3.27633 21.0175,0.82034 31.30391,1.3624c8.23068,-0.68522 17.70027,0.6498 25.11725,-2.63233l0,0.00001zm-0.62686,-7.35914c1.23181,-9.93594 -16.89446,-4.86581 -24.25802,-6.34491c-9.74616,1.70997 -25.2563,-3.66025 -31.38586,3.97386c3.63219,7.6717 19.83081,2.27628 28.33699,3.97843c9.07099,-0.27863 18.48169,0.28181 27.30688,-1.60738l0.00001,0zm0.11285,-17.40863c2.39289,-19.35546 16.04566,-35.47133 23.95122,-53.17666c6.49988,-21.19836 -6.37294,-45.41651 -29.67903,-54.31468c-23.19763,-9.96578 -54.10439,-2.43724 -67.21414,17.0905c-12.63134,16.13042 -10.22074,38.04715 2.12481,53.73385c8.80886,13.70935 15.83697,29.11579 14.69212,45.07033c18.28513,0 36.57027,0 54.85541,0c0.42322,-2.80108 0.8463,-5.60234 1.2696,-8.40335zm-40.48023,-27.42144c-7.24464,-10.91902 -14.68181,-21.92218 -19.72662,-33.75572c4.53561,-5.0892 5.85504,-10.75803 7.26401,-16.73759c12.7301,-2.16748 -1.62039,12.57493 10.39863,12.90715c10.66871,4.02365 5.98851,-19.52402 14.85228,-11.0362c-6.36272,9.31532 12.49808,18.58231 13.19028,5.25631c-0.91434,-10.06176 11.39997,-8.1766 6.59888,0.95149c0.39626,4.69565 9.21609,6.04183 9.3671,9.81849c-6.3494,11.93813 -11.86838,24.26332 -19.38679,35.69204c-1.69231,-4.42489 6.656,-15.51513 9.32361,-22.02682c5.14752,-5.6288 9.57083,-20.79794 -3.84842,-18.73023c-7.78435,10.52453 -18.25596,-6.63411 -25.87793,3.45208c-6.47025,1.67297 -16.64655,-9.71315 -18.5235,1.23482c4.87312,13.00338 15.013,24.08556 20.31836,36.95472c-1.80025,-0.92005 -2.82536,-2.53419 -3.94989,-3.98054l0,0.00001zm-10.16865,-47.6558c-3.52288,-1.49037 1.48486,7.92308 -0.00007,0l0.00007,0zm21.05621,1.11186c-4.57307,-6.70865 -2.12046,8.13969 0,0zm20.40946,0c-4.57307,-6.70865 -2.12049,8.13969 0,0zm-95.01554,-49.57113c-8.08281,-7.11075 -17.01737,-13.78302 -24.04676,-21.62102c17.56095,12.60052 33.63421,26.7914 49.46,41.01783c4.20245,5.00565 -7.33144,-4.67446 -9.47808,-6.29707c-5.37112,-4.31185 -10.6719,-8.68924 -15.93517,-13.09974l0.00001,0zm124.81486,20.33038c13.66193,-14.75558 26.40882,-30.22473 41.13839,-44.19431c-2.46644,6.0146 -10.4061,13.21151 -15.39826,19.406c-8.33687,8.99059 -16.12966,18.49649 -25.66308,26.55744c-1.18987,1.09019 -2.96664,-1.492 -0.07692,-1.76912l-0.00012,0l-0.00001,0zm-29.59205,-13.99842c4.72031,-11.70329 11.56721,-22.84344 19.20588,-33.31762c-0.17753,5.81055 -8.27891,16.82348 -12.17294,24.02833c-2.20283,2.8993 -4.06085,7.52308 -7.03294,9.28929zm-60.44814,-15.00903c-3.28813,-4.15743 -13.18629,-13.83787 -11.33816,-15.15802c9.5431,9.17178 19.24918,18.63849 26.10448,29.48491c-5.83798,-3.88115 -10.03865,-9.48681 -14.76633,-14.32689l0.00001,0zm37.79039,-3.27194c-0.66547,-3.90439 1.40035,-22.54308 2.54801,-9.88702c0.00408,7.92961 0.95895,16.8564 -1.58735,24.07383c-1.09038,-4.64024 -0.82584,-9.47101 -0.96066,-14.18681z" 
+             fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="transparent"/>
+            </g>
+           </svg>
+        </a>
+        <div class="modal fade" id="madlibs-modal" tabindex="-1" aria-labelledby="madlibs-modal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="madlibs-title">mad libs</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body d-flex flex-column">
+                <p class="lean">this is a madlib I wrote and programmed with simple javascript. I intend to improve upon it by substituting the various input variables
+                  with a loop, adding form validation, and writing more madlibs with an option to choose one by theme or randomly on a landing page.<br>
+                </p>
+                  <a href="MAD-libz/index.html" target="_blank">&#9758; check it out here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- madlibz div ends here -->
+
+    <!-- employee directory div -->
+    <div class="directory-div project-div">
+      <a class="btn" data-toggle="modal" data-target="#directory-modal">
+        <svg width="224" height="217" xmlns="http://www.w3.org/2000/svg">
+          <g>
+           <rect fill="none" height="602" width="802" y="-1" x="-1"/>
+          </g>
+          <g>
+           <path stroke="#000" class="port-img" d="m148.43215,148.26005c-8.14959,-3.13268 -11.40366,-11.74235 -11.40366,-11.74235s-3.67163,1.95014 -3.67163,-3.52685s3.67163,3.52685 7.34327,-17.62043c0,0 10.17978,-2.74541 8.14959,-25.44866l-2.44776,0c0,0 6.11219,-24.27305 0,-32.49545c-6.11939,-8.22241 -8.55994,-13.6994 -22.0154,-17.62043s-8.55275,-3.13959 -18.33657,-2.7385c-9.78382,0.39418 -17.94061,5.477 -17.94061,8.21549c0,0 -6.11219,0.39418 -8.55275,2.74541c-2.44776,2.35124 -6.52255,13.30523 -6.52255,16.05064s2.0374,21.14729 4.07479,25.0614l-2.42616,0.78144c-2.0374,22.70325 8.14959,25.44866 8.14959,25.44866c3.66443,21.14729 7.33607,12.14344 7.33607,17.62043s-3.67163,3.52685 -3.67163,3.52685s-3.25407,8.60967 -11.40366,11.74235c-8.14959,3.12576 -53.38986,19.95784 -57.0687,23.48469c-3.67883,3.53377 -3.26127,19.97167 -3.26127,19.97167l193.99901,0c0,0 0.42476,-16.4379 -3.25407,-19.97167c-3.68603,-3.52685 -48.92631,-20.35893 -57.0759,-23.48469zm-89.77503,-1.18945c-0.71273,-1.24477 -1.06549,-2.14377 -1.06549,-2.14377s-3.11009,1.65278 -3.11009,-2.98745s3.11009,2.98745 6.22018,-14.93034c0,0 8.63194,-2.32357 6.90411,-21.56913l-2.07339,0c0,0 1.0295,-4.087 1.70623,-9.22514c-0.0288,-2.12994 0.0432,-4.39819 0.26637,-6.88774l0.27357,-2.94596c-0.15118,-3.40238 -0.77032,-6.49356 -2.24618,-8.47828c-5.18348,-6.96381 -7.25687,-11.61095 -18.65334,-14.93034c-11.39646,-3.31939 -7.25687,-2.66243 -15.54325,-2.32357c-8.29357,0.33194 -15.20488,4.64023 -15.20488,6.97072c0,0 -5.18348,0.33194 -7.25687,2.32357c-1.95101,1.87407 -5.07549,10.11031 -5.44986,13.03552l0,1.94323c0.33837,4.51575 1.85741,16.93581 3.37646,19.86102l-2.05899,0.66388c-1.72063,19.24555 6.90411,21.56913 6.90411,21.56913c3.11009,17.9178 6.22018,10.29011 6.22018,14.93034s-3.11009,2.98745 -3.11009,2.98745s-2.75732,7.30958 -9.66863,9.95126c-0.43916,0.16597 -1.0007,0.38726 -1.67023,0.63622l0,36.19519l4.13959,0c-0.20878,-8.83788 0.55434,-20.24137 5.37066,-24.85394c2.56294,-2.45497 10.9645,-6.49356 45.72983,-19.79187zm160.75994,-62.62584c-0.28797,-2.61402 -0.91431,-4.94451 -2.10219,-6.54197c-5.17628,-6.97072 -7.25687,-11.61095 -18.64614,-14.93034c-11.40366,-3.31939 -7.25687,-2.66243 -15.55045,-2.32357c-8.28637,0.33194 -15.19768,4.64023 -15.19768,6.97072c0,0 -5.17628,0.33194 -7.25687,2.32357c-1.95101,1.88099 -5.10429,10.17947 -5.45705,13.07702l0.23758,0l0.57594,6.31376c0.14399,1.59746 0.15838,3.01511 0.19438,4.46043c0.64794,4.60565 1.51185,9.33579 2.37576,10.98857l-2.05899,0.66388c-1.72063,19.24555 6.91131,21.56913 6.91131,21.56913c3.11009,17.9178 6.21298,10.29011 6.21298,14.93034s-3.11009,2.98745 -3.11009,2.98745s-0.38156,0.98199 -1.17348,2.3374c34.34057,13.13926 42.67014,17.15019 45.20428,19.59824c4.82352,4.61257 5.57944,16.00915 5.37066,24.85394l3.45565,0l0,-36.6931c-0.11519,-0.04149 -0.27357,-0.10373 -0.37436,-0.14522c-6.90411,-2.6486 -9.66863,-9.95126 -9.66863,-9.95126s-3.11729,1.65278 -3.11729,-2.98745s3.11729,2.98745 6.22018,-14.93034c0,0 5.78822,-1.58363 6.93291,-12.73125l0,-8.48519c-0.0072,-0.12448 -0.0072,-0.22821 -0.0216,-0.35269l-2.08059,0c0,0 1.54785,-6.1547 2.10219,-12.86956l0,-8.13251l0.0216,0z" 
+           fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="transparent"/>
+          </g>
+         </svg>
+      </a>
+      <div class="modal fade" id="directory-modal" tabindex="-1" aria-labelledby="directory-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="directory-title">employee directory</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body d-flex flex-column">
+              <p class="lean">by using the fetch API and the randomuser.me random people generator, this webpage displays a page
+                of randomized employees in a fake company and includes a filtering search function.<br>
+              </p>
+                <a href="directory-project/index.html" target="_blank">&#9758; check it out here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+  <!-- directory div end -->
+
+  <!-- guess the phrase div -->
+  <div class="row justify-content-md-between">
+      <div class="guess-div project-div">
+        <a class="btn" data-toggle="modal" data-target="#guess-modal">
+          <svg width="224" height="217" xmlns="http://www.w3.org/2000/svg">
+            <g>
+            <rect fill="transparent" height="219" width="226" y="-1" x="-1"/>
+            </g>
+            <g>
+            <path stroke="#000" class="port-img" d="m113.24999,32.85234c-48.32717,0 -87.49999,38.05584 -87.49999,85.00002c0,46.94659 39.17282,84.99998 87.49999,84.99998c48.32491,0 87.50002,-38.05338 87.50002,-84.99998c0,-46.94418 -39.1751,-85.00002 -87.50002,-85.00002zm7.99455,133.95658l-16.29675,0l0,-15.18173l16.29675,0l0,15.18173zm0,-31.392l0,5.01744l-16.29675,0l0,-6.18215c0,-18.65532 21.85428,-21.61573 21.85428,-34.87472c0,-6.04583 -5.56457,-10.6771 -12.84945,-10.6771c-7.54888,0 -14.16988,5.40329 -14.16988,5.40329l-9.27821,-11.19957c0,0 9.14505,-9.26511 24.9064,-9.26511c14.97169,0 28.87288,9.00639 28.87288,24.19034c0.00699,21.24111 -23.03928,23.69071 -23.03928,37.58757l0,0.00001z" 
+            fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="transparent"/>
+            </g>
+          </svg>
+        </a>
+        <div class="modal fade" id="guess-modal" tabindex="-1" aria-labelledby="guess-modal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="guess-title">guess that phrase</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body d-flex flex-column">
+                <p class="lean">as a part of the techdegree I built javascript for this "guess the phrase" game. it includes an array of 5 different phrases
+                  the user may be required to guess for as well as functions to randomize the phrases and to keep score and end the game when lost or won.
+                  <br>
+                </p>
+                  <a href="guess-le-phrase/index.html" target="_blank">&#9758; check it out here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<!-- guess div ends -->
+
+<!-- listicle div starts -->
+      <div class="listicle-div project-div">
+        <a class="btn" data-toggle="modal" data-target="#listicle-modal">
+          <svg width="224" height="217" xmlns="http://www.w3.org/2000/svg">
+            <g>
+             <rect fill="none" height="602" width="802" y="-1" x="-1"/>
+            </g>
+            <g>
+             <path stroke="#000" class="port-img" d="m89.41476,198.33265c-30.95937,-9.77617 -53.15003,-40.83977 -48.10698,-67.34264c3.17999,-16.71207 70.26981,-118.16601 76.12887,-115.12296c1.91232,0.99321 18.92959,24.64637 37.81615,52.56261c30.25428,44.71886 34.33918,53.05754 34.33918,70.09812c0,34.54055 -32.8945,62.83317 -72.39116,62.26381c-11.52568,-0.16617 -24.02942,-1.27269 -27.78606,-2.45893l0,-0.00001zm31.01779,-17.37262c1.02477,-4.47177 -1.36904,-6.65264 -7.30229,-6.65264c-13.52248,0 -32.28036,-14.39259 -36.47115,-27.98366c-4.47044,-14.49798 -16.32357,-16.22222 -18.07434,-2.62922c-3.3731,26.18886 56.16511,62.06274 61.84778,37.26551l0.00001,0z" 
+             fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="transparent"/>
+            </g>
+           </svg>
+        </a>
+        <div class="modal fade" id="listicle-modal" tabindex="-1" aria-labelledby="listicle-modal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="listicle-title">listicles</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body d-flex flex-column">
+                <p class="lean">one of my favorite hobbies is writing lists, and recently I've begun writing satirical lists a lá Dave Eggers' online
+                  magazine "McSweeney's". I've animated this page with css and had it show modal windows with these lists and intend to update it semi-regularly and improve the design.<br>
+                </p>
+                  <a href="listiclepage/index.html" target="_blank">&#9758; check it out here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- list div ends here -->
+
+      <!-- lightbox gallery div here -->
+      <div class="lightbox-div project-div">
+        <a class="btn" data-toggle="modal" data-target="#lightbox-modal">
+          <svg width="224" height="217" xmlns="http://www.w3.org/2000/svg">
+            <g>
+             <rect fill="transparent" height="602" width="802" y="-1" x="-1"/>
+            </g>
+            <g>
+             <path stroke="#000" class="port-img" d="m9.20402,183.71108l54.98457,-55.78293c-7.40741,-12.39186 -11.75154,-26.88947 -11.75926,-42.43604c0.00772,-45.34809 36.2037,-82.07746 80.87963,-82.09312c44.68364,0.01566 80.89506,36.74503 80.89506,82.08529c0,45.31678 -36.21142,82.04615 -80.89506,82.04615c-15.33179,0 -29.62191,-4.40721 -41.83642,-11.92217l-55,55.79075l-27.26852,-27.68793zm174.14352,-98.2268c-0.0463,-28.0402 -22.39969,-50.71033 -50.03086,-50.77295c-27.61574,0.06262 -49.98457,22.73276 -50.03086,50.77295c0.05401,28.02454 22.41512,50.69467 50.03086,50.7573c27.63117,-0.06262 49.98457,-22.73276 50.03086,-50.7573z"
+              fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="transparent"/>
+            </g>
+           </svg>
+        </a>
+        <div class="modal fade" id="lightbox-modal" tabindex="-1" aria-labelledby="lightbox-modal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="lightbox-title">searchable photo gallery</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body d-flex flex-column">
+                <p class="lean">this project was an excercise in jquery plugins and pure javascript. by using a lightbox plugin
+                  and javascript to create a filtering search bar, I built this photo gallery.<br>
+                </p>
+                  <a href="jquery-lightboxproj/index.html" target="_blank">&#9758; check it out here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- lightbox div ends here -->
+
+      <!-- who is in space div -->
+      <div class="space-div project-div">
+        <a class="btn" data-toggle="modal" data-target="#space-modal">
+          <svg width="224" height="217" xmlns="http://www.w3.org/2000/svg">
+            <g>
+             <rect fill="transparent" height="602" width="802" y="-1" x="-1"/>
+            </g>
+            <g>
+             <path stroke="#000" class="port-img" d="m32.43348,155.69848l163.03345,0.05805l-5.29047,7.29226l-152.39004,-0.17415l-5.35294,-7.17617l0.00001,0zm1.12038,-97.00364l160.85492,-0.17415l4.66819,7.48075l-170.25361,0.05805l4.7305,-7.36465zm-15.87442,48.60722l192.47918,-0.17415l-0.2488,7.48076l-192.1059,-0.1161l-0.12448,-7.19051zm192.63852,0.69384c0,49.52435 -43.20727,89.81291 -96.32491,89.81291c-53.09469,0 -96.29391,-40.29585 -96.29391,-89.81291c0,-49.51731 43.20702,-89.80587 96.29391,-89.80587c53.11765,-0.00728 96.32491,40.28856 96.32491,89.80587zm-96.31734,-97.00365c-57.333,0 -103.98828,43.51176 -103.98828,96.99636c0,53.49188 46.65528,97.00364 103.98828,97.00364c57.36422,0 104.01171,-43.51176 104.01171,-97.00364c0,-53.48459 -46.64748,-96.99636 -104.01171,-96.99636zm29.18203,97.00365c0,52.92089 -15.37363,89.81291 -29.18203,89.81291c-13.79278,0 -29.16616,-36.89202 -29.16616,-89.81291c0,-52.93546 15.36581,-89.80587 29.16616,-89.80587c13.80061,-0.00728 29.18203,36.87041 29.18203,89.80587zm-29.18203,-97.00365c-23.95121,0 -36.87615,49.97956 -36.87615,96.99636c0,47.03115 12.92494,97.00364 36.87615,97.00364c23.95146,0 36.89982,-49.97975 36.89982,-97.00364c-0.00781,-47.0168 -12.94836,-96.99636 -36.89982,-96.99636zm68.34418,97.00365c0,49.52435 -30.66967,89.81291 -68.34418,89.81291c-37.66667,0 -68.32075,-40.29585 -68.32075,-89.81291c0,-49.51731 30.65407,-89.80587 68.32075,-89.80587c37.6745,-0.00728 68.34418,40.28856 68.34418,89.80587zm-68.34418,-97.00365c-41.91304,0 -76.03073,43.51176 -76.03073,96.99636c0,53.49188 34.11769,97.00364 76.03073,97.00364c41.92865,0 76.03877,-43.51176 76.03877,-97.00364c0,-53.48459 -34.11012,-96.99636 -76.03877,-96.99636z" 
+             fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="transparent"/>
+            </g>
+           </svg>
+        </a>
+        <div class="modal fade" id="space-modal" tabindex="-1" aria-labelledby="space-modal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="space-title">who's in space?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body d-flex flex-column">
+                <p class="lean">by using fetch and 2 other APIs, this webpage tells a visitor who exactly is in space at any given moment,
+                  along with a brief summary of the astronaut. 
+                  javascript was used to create the dynamic layout and make the fetch requests.<br>
+                </p>
+                  <a href="whoisinspace/index.html" target="_blank">&#9758; check it out here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!--port containr ends here-->
+  </div>
+</div>   <!--content shell div ends here-->
+
 
         <!-- about section start -->
 <div class="container-fluid about-shell" id="about">
             <h1 class="text-right mx-4">a brief history</h1>
         <div class="container pb-5 d-md-flex flex-md-row justify-content-md-around">
-                <img class="img-fluid col-md-5 myself" src="images/myself.jpeg" alt="myself">
+                <img class="img-fluid col-md myself" src="images/myself.jpeg" alt="myself">
                 <p class="lean col-md-5 bio">
                   hi! I’m kendall. I’m generally a word person, having worked as an editor, proofreader, 
                   translator, and ghostwriter, and now am manifesting a career in web design from my love for 

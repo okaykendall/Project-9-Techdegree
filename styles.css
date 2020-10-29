@@ -11,6 +11,10 @@ a:hover {
     z-index: 2000;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
 .navlink:hover {
     color: #6A35FC;
 }
@@ -72,66 +76,98 @@ p .highlighter {
     padding-bottom: 3em;
 }
 
-.list-group-item:first-child {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+.content-shell h1 {
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    font-size: 45px;
 }
 
-.list-group-item {
-        background-color: transparent;
-        border: none;
-        background-position: -0% 0; 
-        background-size: 99% 80%;
-        background-repeat: no-repeat;
-        transition: background .5s;
-        color: #fcee4e;
-        padding: 8px;
+.content-shell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.list-group-item:nth-child(even) {
-    text-align: right;
-    background-image: linear-gradient(to right, #6135fc 80%, #6135fc 20%);
-    /* background-position: 80% 0%; */
+.main-project-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.list-group-item:nth-child(odd) {
-    background-image: linear-gradient(to left, #6135fc 50%, #6135fc 60%);
+.btn {
+    padding: 0;
+    border: none;
 }
 
-.list-group-item:focus {
-    background-size: 70% 80%;
-    background-position: -90% 0;
-    font-weight: 500;
+.row {
+    margin: 0 auto;
+    display: block;
 }
 
-.list-group-item.active {
-    background-color: transparent;
-    color: yellow;
+svg {
+    transform: scale(0.7);
+    justify-self: center;
 }
 
-.list-group-item-action:hover {
-    background-color: transparent;
-    font-style: italic; 
-    color: yellow;
+.project-div {
+    display: flex;
+    justify-self: center;
 }
 
-.list-group a:nth-child(even):focus {
+@keyframes offset {
+    25% {
+        stroke-dashoffset: 3;
+    }
+
+    50% {
+        stroke-dashoffset: 2;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.port-img {
+    fill: #fff;
+    stroke: transparent;
+    stroke-width: 2;
+    stroke-dasharray: 810;
+    stroke-dashoffset: 810;
+    transition: offset, fill .7s ease-out;
+}   
+
+.port-img:hover {
+   fill: #68FCC9;
+   stroke: black;
+   animation: offset 3s linear forwards;
+} 
+
+
+.modal-header {
+    border-bottom: none;
     background-color: palegoldenrod;
+    color: #6135fc;
+    letter-spacing: 2px;
+}
+
+.modal-body {
+    background-color: palegoldenrod;
+}
+
+.modal-body p {
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+.modal-body a {
     color: #FC5B35;
+    padding-top: 5px;
+    text-align: right;
+    letter-spacing: 1.5px;
 }
 
-.tab-pane p {
-    line-height: 1.8;
-    background-color: white;
-    padding: 10px;
-}
-
-.tab-pane a {
-    color: #68FCC9;
-}
-
-.tab-pane a:hover {
-    color: #FC5B35;
+.modal-body a:hover {
     font-style: italic;
 }
 
@@ -145,11 +181,13 @@ p .highlighter {
     padding-top: 1em;
     padding-bottom: 1em;
     font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .myself {
     padding: 0;
     box-shadow: 8px 10px palegoldenrod;
+    transform: scale(0.6)
 }
 
 .bio {
@@ -157,6 +195,7 @@ p .highlighter {
     font-size: 25px;
     padding-top: 15px;
     line-height: 2;
+    letter-spacing: 1px;
     text-align: center;
     background-color: white;
     display: flex;
@@ -166,6 +205,7 @@ p .highlighter {
 /* contact section ------- */
 #contact h3 {
     color: #FC5B35;
+    letter-spacing: 1.5px;
 }
 
 .content-section {
@@ -176,6 +216,7 @@ p .highlighter {
 #contact a {
     padding: 8px;
     color: palegoldenrod;
+    letter-spacing: 1.5px;
 }
 
 #contact a:hover {
@@ -212,9 +253,27 @@ h1 a {
     font-size: 45px;
 }
 
+.main-project-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* .row {
+    display: flex;
+} */
+
+svg {
+    transform: scale(0.8);
+}
+
 .bio {
     padding: 5px;
     font-size: 20px;
+}
+
+.myself {
+    transform: scale(0.7)
 }
 
 /* .spiralJetty {
@@ -238,5 +297,23 @@ h1 a {
     position: relative;
     box-shadow: 8px 10px #6A35FC;
     }
+
+.main-project-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}    
+
+.project-div {
+    width: 25%;
+}
+
+.row {
+    display: flex;
+}
+
+svg {
+    transform: scale(0.8)
+}
 
 }
