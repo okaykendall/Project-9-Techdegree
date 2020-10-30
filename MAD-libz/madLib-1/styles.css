@@ -30,25 +30,35 @@ h1 {
 }
 
 ul, button {
-    line-height: 1.8;
     font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+label, input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+
+label {
+    margin:  auto;
+    border-bottom: 1px solid black;
+}
+
+input {
+    width: 80%;
+    margin-bottom: 8px;
+    margin-left: 2.5em;
 }
 
 #inputForm {
     padding-bottom: 4em;
 }
 
-input {
-    padding-left: 6px;
-}
-
 input:focus {
     border: 2px solid yellow;
     box-shadow: 5px 5px red;
-}
-
-li {
-    padding-bottom: 5px;
 }
 
 .storyButton {

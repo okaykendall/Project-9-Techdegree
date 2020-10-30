@@ -1,4 +1,16 @@
 
+
+    const form = document.querySelector('form');
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      return storyFunction();
+    });
+
+
 const makeStory = document.getElementById('create');
 
 
@@ -16,7 +28,7 @@ const storyFunction = function () {
 
 //mad lib variables    
     const apex = document.getElementById('apex').value;
-    const name = document.getElementById('name').value;
+    const name = document.getElementById('firstName').value;
     const activity = document.getElementById('activity').value;
     const monster = document.getElementById('monster').value;
     const bodyPart = document.getElementById('body-part').value;
@@ -54,7 +66,7 @@ const storyFunction = function () {
 };
 
 
-makeStory.addEventListener('click', storyFunction);
+// makeStory.addEventListener('click', storyFunction);
 
 
 
