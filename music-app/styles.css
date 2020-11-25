@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C2FACE;
+}
+
+.container {
+  margin-top: 5em;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transform: scale(0.9);
+  position: relative;
+  border: 20px solid palegoldenrod;
+  padding: 0;
+  width: 1080px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 2px black;
+  z-index: 1;
+}
+
+/* .antenna {
+  width: 85%;
+  height: 3%;
+  background: #9f9f9f;
+  background: linear-gradient(0deg, #9f9f9f 2%, #888888 27%, #313131 44%, #757575 66%, #bcbcbc 70%, #dfdfdf 81%, #cecece 95%, #464646 100%);
+  z-index: -1;
+  position: absolute;
+  left: 15%;
+  top: 5%;
+  /* transform: rotate(-10deg); */
+
+
+.antenna:before {
+  content: "";
+  position: absolute;
+  width: 2%;
+  z-index: -1;
+  height: 20%;
+  background: #c8c8c8;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-image: linear-gradient(0deg, #9f9f9f 25%, #888888 25%, #313131 25%, #757575 25% );
+  left: 90%;
+  top: -20%;
+  border-bottom: 5px solid #9f9f9f;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.main-box {
+  border-radius: 5px;
+  z-index: 50;
+  position: relative;
+  width: 1080px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  background-image: repeating-linear-gradient(40deg, hsl(30, 50%, 15%), hsl(20, 50%, 30%), hsl(25, 40%, 20%) 8px);
+  background-position: center;
+  background-size: cover;
+}
+
+.inner-speaker {
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  width: 75%;
+  border: 3px solid black;
+  box-shadow: 2px 6px black;
+  margin: 1em;
+  padding: 5px;
+  height: 30%;
+  border-radius: 10px;
+  /* background-image: repeating-linear-gradient(slategray, slategray 20px, palegreen 20px, palegreen 25px); */
+  background-color: #818181;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b7b4b7' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 8px;
+}
+
+.btn-container {
+  margin-top: 20px;
+  height: 450px;
+  border: 3px solid black;
+  box-shadow: 2px 6px black;
+  background-color: paleturquoise;
+  border-radius: 10px;
+  flex-basis: 40%;
+  vertical-align: middle;
+}
+
+ul .btn-row {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+li {
+  padding: 7px;
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* NEW */
+  justify-content: center;
+  vertical-align: top;
+  text-align: center;
+}
+
+.button-div:hover {
+  animation: scalebigger 1s ease-in-out;
+  background-color: red;
+  box-shadow: 6px 2px purple;
+}
+
+/* div .row {
+  margin-left: 0;
+  margin-right: 0;
+} */
+
+.button-div {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  background-color: purple;
+  border-radius: 5px;
+  box-shadow: 6px 2px red;
+  margin: 15px 15px 3px 15px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  vertical-align: middle;
+  transition: background 1s;
+  transition: color 1s;
+}
+
+li span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.screencontainer {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  z-index: 30;
+  align-items: flex-end;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.song-screen {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-self: center;
+  width: 300px;
+  height: 50px;
+  z-index: 10;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: black;
+  border: 3px solid black;
+  border-radius: 12px;
+}
+
+#screenAnimation {
+  animation: scroll-left 8s linear infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translateX(10%);
+  color: cornsilk;
+  position: absolute;
+  z-index: 20;
+  font-size: .8em;
+  top: 35%;
+  /* left: 5%; */
+  font-family: 'VT323', monospace;
+}
+
+.animateSVG {
+  animation-name: scalebigger;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+ }
+
+.pause-btn {
+  font-family: 'VT323', monospace;
+  position: absolute;
+  top: 530px;
+  left: 920px;
+  justify-self: center;
+  align-self: flex-end;
+  cursor: pointer;
+  transform: scale(0.5);
+}
+
+#pauseSVG {
+  display: flex;
+  align-self: flex-end;
+}
+
+
+.pausedState {
+  background: linear-gradient(264deg, #f70317, #eff0ea);
+  background-size: 400% 400%;
+
+  -webkit-animation: pausedAnimation 7s ease infinite;
+  -moz-animation: pausedAnimation 7s ease infinite;
+  animation: pausedAnimation 7s ease infinite;
+}
+
+/* pause button keyframeeee */
+
+@-webkit-keyframes pausedAnimation {
+  0%{background-position:0% 53%}
+  50%{background-position:100% 48%}
+  100%{background-position:0% 53%}
+}
+@-moz-keyframes pausedAnimation {
+  0%{background-position:0% 53%}
+  50%{background-position:100% 48%}
+  100%{background-position:0% 53%}
+}
+@keyframes pausedAnimation {
+  0%{background-position:0% 53%}
+  50%{background-position:100% 48%}
+  100%{background-position:0% 53%}
+}
+
+/* song screen keyframeeee */
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(50%);
+  }
+
+  /* 75% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  } */
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* song button div animationssss */
+
+.pushAnimation, .playing {
+  animation-name: animateBtns;
+  animation-timing-function: linear;
+  animation-iteration-count:  infinite;
+  animation-duration: 3s;
+}
+
+@keyframes animateBtns {
+  from {
+    transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg); 
+    }
+    to{
+    transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    }
+   }
+
+   /* speaker and song button div scale animationnn */
+
+   @keyframes scalebigger {
+    0% {
+      transform: scale(1);
+       transform-origin: center center;
+    }
+    50% {
+      transform: scale(1.1);
+      transform-origin: center center;
+    }
+} 
+
+#shuffleBTN {
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+    color: purple;
+    background-color: cornsilk;
+    border: 2px dotted purple;
+    display: flex;
+    align-self: baseline;
+    margin: 8px;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+    /* font-size: 40px; */
+}
+
+#shuffleBTN p {
+  padding-left: 27px;
+  font-size: 30px;
+  text-align: center;
+}
