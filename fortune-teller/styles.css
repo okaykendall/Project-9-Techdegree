@@ -1,0 +1,395 @@
+
+.hidden {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  
+  /* html,
+  body {
+    margin: 0 auto;
+    height: 100%;
+  } */
+
+
+  .headWrap {
+      margin: 0 auto;
+      padding: 5em 0;
+      height: 200%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    justify-content: center;
+    background-color: #1d212b;
+    /* background-color: #052D5C; */
+  }
+  
+  header {
+    position: relative;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 8px;
+    width: 50%;
+    height: 90%;
+    text-align: center;
+    color: #252B37;
+    background-color: #151823;
+    animation: textColor 6s ease infinite;
+  }
+
+  header input {
+      width: 50%;
+      margin-bottom: 3em;
+      padding: 8px;
+      border: 4px solid red;
+      background: purple;
+      color: cornsilk;
+      font-family: 'Sawarabi Mincho', sans-serif;
+  }
+
+  header input::placeholder {
+    color: cornsilk;
+    padding: 5px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    /* text-shadow: 3px 3px red; */
+  }
+
+  header button {
+      width: 40px;
+      padding: 8px;
+      color: cornsilk;
+      /* background-color: yellow;
+      box-shadow: 5px 10px red; */
+      background-color: red;
+      border: 4px solid purple;
+      cursor: pointer;
+      transition: all 1s;
+      text-shadow: 1px 1px purple;
+  }
+
+  h2 {
+      margin-top: 3em;
+      text-shadow: 2px 2px cornsilk;
+  }
+
+  header h3 {
+      font-style: oblique;
+      /* text-shadow: 3px 3px cornsilk; */
+  }
+
+
+  header:after {
+    position: absolute;
+    content: "";
+    top: 5vw;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 90%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.75);
+    -webkit-filter: blur(5vw);
+    -moz-filter: blur(5vw);
+    -ms-filter: blur(5vw);
+    filter: blur(5vw);
+    /* background: linear-gradient(270deg, red, orange, yellow, green, indigo, violet ); */
+    background: linear-gradient(270deg, red, purple, cornsilk );
+    background-size: 200% 200%;
+    animation: animateGlow 6s ease infinite;
+  }
+  @keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes textColor {
+    0% {
+      color: red;
+    }
+
+    50% {
+        color: purple;
+    }
+
+    100% {
+        color: cornsilk;
+    }
+  }
+
+  /* .responseSection {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+  } */
+
+  .wrapper {
+      margin-top: 5em;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+  }
+
+  #fortune {
+      /* margin-top: 3em; */
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+  }
+
+  .box3d {
+    margin-top: 1em;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+  }
+
+  .answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cornsilk;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .box3d div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    opacity: 0.95;
+    transform-origin: 50% 50% -100px;
+  }
+  
+  .p1 {
+    background: red;
+    transform: perspective(600px) rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+    animation: spin1 10s infinite linear;
+  }
+
+  .p2 {
+    background: orange;
+    color: black;
+    animation: spin2 10s infinite linear;
+  }
+  
+  .p3 {
+    background: yellow;
+    color: black;
+    animation: spin3 10s infinite linear;
+  }
+  
+  .p4 {
+    background: blue;
+    animation: spin4 10s infinite linear;
+  }
+  
+  .p5 {
+    background: indigo;
+    animation: spin5 10s infinite linear;
+  }
+  
+  .p6 {
+    background: violet;
+    animation: spin6 10s infinite linear;
+  }
+  
+  /* for Safari and Chrome */
+  /* for IE10 and Firefox */
+  @keyframes spin1 {
+    to {
+      transform: perspective(600px) rotateX(360deg) rotateY(450deg) rotateZ(0deg);
+    }
+  }
+  @keyframes spin2 {
+    0% {
+      transform: perspective(600px) rotateX(0deg) rotateY(270deg) rotateZ(0deg);
+    }
+    100% {
+      transform: perspective(600px) rotateX(360deg) rotateY(630deg) rotateZ(0deg);
+    }
+  }
+  @keyframes spin3 {
+    0% {
+      transform: perspective(600px) rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+      transform: perspective(600px) rotateX(450deg) rotateY(0deg) rotateZ(-360deg);
+    }
+  }
+  @keyframes spin4 {
+    0% {
+      transform: perspective(600px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+      transform: perspective(600px) rotateX(270deg) rotateY(0deg) rotateZ(360deg);
+    }
+  }
+  @keyframes spin5 {
+    0% {
+      transform: perspective(600px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+      transform: perspective(600px) rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+    }
+  }
+  @keyframes spin6 {
+    0% {
+      transform: perspective(600px) rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+    }
+    100% {
+      transform: perspective(600px) rotateX(360deg) rotateY(540deg) rotateZ(0deg);
+    }
+  }
+
+  .btnsNMoon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: -330px;
+    left: 250px;
+    /* align-items: baseline; */
+    width: 10%;
+    margin-bottom: 1em;
+  }
+
+  .ButtonGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    flex-basis: 1;
+    /* margin: 1em; */
+    /* margin-right: 1em; */
+  }
+
+  .genBTN {
+    margin: 1em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    width: 250px;
+    padding: 15px;
+  }
+
+  #refresh {
+      background-color: cornsilk;
+      border: 4px solid purple;
+      color: red;
+      transition: all .5s ease-in;
+  }
+
+  #adviceBTN {
+      background-color: purple;
+      color: cornsilk;
+      border: 4px solid red;
+      transition: all .5s ease-in;
+      margin-bottom: 1em;
+  }
+
+  #moonBtn {
+    background-color: cornsilk;
+    color: red;
+    border: 4px solid purple;
+    transition: all .5s ease-in;
+  }
+
+  #adviceBTN:hover, #refresh:hover, header button:hover,
+  #moonBtn:hover {
+    color: purple;
+    background-color: red;
+    border: 4px solid cornsilk;
+  }
+
+  #adviceDiv {
+      position: relative;
+      /* bottom: 20px; */
+      /* width: 300px;
+      height: 300px; */
+  }
+
+
+  section {
+      padding: 5px 30px;
+      background: cornsilk;
+      position: absolute;
+      color: red;
+      border: 4px solid purple;
+      width: 218px;
+      height: 273px;
+      /* border-radius: 50%; */
+      /* line-height: 400px; */
+      letter-spacing: 1.2px;
+      line-height: 250px;
+  }
+
+  #adviceDiv section h3 {
+      display: inline-block;
+      font-size: 15px;
+      line-height: normal;
+      vertical-align: middle;
+      text-align: center;
+  }
+
+  #moon {
+    display: flex;
+    order: -1;
+    background-color: transparent;
+    border: none;
+  }
+
+
+  #moonPhase {  
+    background-color: red;    
+/* display: flex;
+justify-content: center;     */
+/* position: absolute;
+left: -100px;
+top: 200px; */
+margin: auto;
+color: cornsilk;
+text-align: center;    
+color:black;
+border: 4px solid cornsilk;
+padding: 5px 30px;
+/* display: flex;
+order: -1; */
+}
+
+#moonPhase [shadow]{
+filter:drop-shadow(0 0 25px rgb(0,50,50));
+padding:15px 0;
+  }
