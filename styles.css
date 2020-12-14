@@ -143,7 +143,7 @@ svg {
 
 .port-img:hover {
    fill: #68FCC9;
-   stroke: black;
+   stroke: palegoldenrod;
    animation: offset 3s linear forwards;
 } 
 
